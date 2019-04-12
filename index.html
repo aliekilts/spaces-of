@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Spaces of</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    
+    <!-- Load Leaflet CSS -->
+    <link href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" rel="stylesheet">
+    
+    <!-- Load our styles -->
+     <script src="/script.js" defer></script>
+    </head>  
+    <body>
+    <h1><strong><font color="black">Spaces of (______)</font></strong></h1>
+    <p>
+    <strong><font color="black">Our bodies turn into data post-incident, but what would it look like to collect it before? Spaces of Avoidance looks at the common routes taken and avoided in public spaces as a way to explore the ways we protect our own bodies everyday.</font></strong>
+    </p>
+    <p>
+    <font color="black">I provided a basemap with a central address of each participant’s choosing and asked them to use a blue pencil to draw the routes they most commonly take. I asked them to be as specific as possible, even paying attention to which side of the the street they would typically walk on. Then, with the red pencil, I asked them to draw the routes and areas they avoided. The reasons vary, from noisey streets and lots of dog poop, to corners where “men make kissy noises”. With one participant who biked, we ended up introducing a new color (green), because, despite poor road conditions or construction sites that guarantee getting a cat-call, one doesn’t have many options for their bike route. I took all these maps and plotted the points and comments into CARTO.
+    </font>
+    <link href="./styles.css" rel="stylesheet">
+  <body>
+    <div class="map-wrapper">
+      <div id="map"></div>
+      <div class="checkboxes">
+        <div>
+          <label>Comments
+            <input type="checkbox" class="comments-checkbox" />
+          </label>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Load Leaflet and Carto libraries -->
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://libs.cartocdn.com/carto.js/v4.1.11/carto.min.js"></script>
+    
+    <!-- Load our JavaScript -->
+    <script src="./script.js"></script>
