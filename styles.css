@@ -1,0 +1,43 @@
+body {
+  margin: 5;
+  padding: 0;
+}
+
+#map {
+  height: 100vh;
+  width: 100%;
+  background: white;
+}
+
+.checkboxes {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  z-index: 20000;
+}
+
+@media (max-width: 400px) {
+  body {
+    font-size: 34px;
+  }
+  
+  /* If the screen is too small, make everything 100% wide instead */
+  .main {
+    float: none;
+    width: 100%;
+    padding: 5px;
+    height: auto;
+  }
+  
+  .sidebar {
+    float: none;
+    width: 100%;
+    padding: 5px;
+    height: auto;
+  }
+  
+  /* If the screen is too small, get rid of the info box */
+  .info {
+    display: none; 
+  }
+}
